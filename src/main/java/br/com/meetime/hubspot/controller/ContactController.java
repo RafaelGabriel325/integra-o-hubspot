@@ -35,8 +35,8 @@ public class ContactController {
     @ApiResponse(responseCode = "201", description = "Contato criado com sucesso")
     @ApiResponse(responseCode = "400", description = "Pedido inválido - Entrada inválida")
     @ApiResponse(responseCode = "401", description = "Não autorizado - Token de acesso ausente ou inválido")
+    @ApiResponse(responseCode = "409", description = "Usuário já existe")
     @ApiResponse(responseCode = "429", description = "Limite de taxa excedido")
-    @ApiResponse(responseCode = "500", description = "Erro interno no servidor")
     public ResponseEntity<String> criarContato(@RequestBody Map<String, Object> contatoCorpo) {
         LOGGER.info("Endpoint para criar um novo contato no HubSpot");
         return contactService.criarContato(contatoCorpo);
