@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-Este projeto é uma aplicação Spring Boot projetada para integrar com o CRM HubSpot usando a API HubSpot. Ele implementa a autenticação OAuth 2.0 e fornece endpoints para criar contatos e receber notificações de criação de contatos via webhooks.
+Este projeto é uma aplicação Spring Boot projetada para integrar com o CRM HubSpot usando a API HubSpot. Ele implementa a autenticação OAuth 2.0 e fornece endpoints para criar contatos e webhook.
 
 ## Arquitetura
 
@@ -42,7 +42,7 @@ Antes de executar esta aplicação, certifique-se de ter o seguinte instalado:
 ### 1. Clone o Repositório
 
 ```bash
-git clone https://github.com/seuusuario/hubspot-integration.git
+git clone https://github.com/RafaelGabriel325/integra-o-hubspot
 cd hubspot-integration
 ```
 
@@ -71,8 +71,6 @@ Substitua `SEU_CLIENT_ID` e `SEU_CLIENT_SECRET` pelas suas credenciais reais do 
 mvn clean install
 mvn spring-boot:run
 ```
-
-A aplicação estará rodando em [http://localhost:8080](http://localhost:8080).
 
 ## Endpoints
 
