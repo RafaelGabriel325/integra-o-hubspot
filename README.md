@@ -43,7 +43,7 @@ Antes de executar esta aplicação, certifique-se de ter o seguinte instalado:
 
 ```bash
 git clone https://github.com/RafaelGabriel325/integra-o-hubspot
-cd hubspot-integration
+cd integra-o-hubspot
 ```
 
 ### 2. Configure o Aplicativo HubSpot
